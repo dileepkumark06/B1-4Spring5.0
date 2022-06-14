@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController
 {
-	@RequestMapping("/admin")
+	@RequestMapping("/admin1")
 	public String home(HttpServletRequest req,HttpServletResponse res)
 	{
 		HttpSession session=req.getSession();
@@ -20,5 +20,3 @@ public class HomeController
 		return "home.jsp";
 	}
 }
-
-
